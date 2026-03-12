@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KenAI | Instant Voice Assistant</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <div class="connection-status">
+            <div id="status-dot"></div>
+            <span id="status-text">Checking Server...</span>
+        </div>
+
+        <canvas id="canvas"></canvas>
+
+        <div class="orb-wrapper">
+            <div class="orb"></div>
+        </div>
+
+        <div class="header">
+            <h1>Ken<span>AI</span></h1>
+            <p id="status">Click Start to Begin</p>
+        </div>
+
+        <div class="transcript-area">
+            <p id="transcript">Waiting for your command...</p>
+        </div>
+
+        <div class="controls">
+            <button id="start-btn">Start Assistant</button>
+            <button id="mute-btn" style="display: none;">Mute Mic</button>
+        </div>
+
+        <div class="instructions">
+            Say <strong>"Hello Ken"</strong> + your question. <br>
+            Say <strong>"Over"</strong> to send immediately.
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

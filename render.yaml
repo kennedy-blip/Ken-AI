@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: kenai-backend
+    runtime: python
+    plan: free # Use the free tier
+    region: ohio # Or your preferred region
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "uvicorn main:app --host 0.0.0.0 --port $PORT"
+    envVars:
+      - key: GROQ_API_KEY
+        sync: false # This will prompt you to enter the key in the Render dashboard
+      - key: FRONTEND_URL
+        value: "*" # Initially allow all, update this once you deploy your frontend
+      - key: PYTHON_VERSION
+        value: 3.10.0
