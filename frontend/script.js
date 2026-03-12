@@ -9,7 +9,7 @@ const synth = window.speechSynthesis;
 // Configuration: REPLACE with your Render URL after deployment
 const API_BASE_URL = window.location.hostname === '127.0.0.1' 
     ? 'http://127.0.0.1:8000' 
-    : 'https://kenai-backend.onrender.com'; 
+    : 'https://ken-ai.onrender.com'; 
 
 // UI Elements
 const startBtn = document.getElementById('start-btn');
